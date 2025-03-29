@@ -6,3 +6,9 @@ describe("Testing multiplication", () => {
     assert.equal(multiply(2, 1), 2);
   });
 });
+
+describe("Testing multiplication second cycle", () => {
+  it("Should multiply two values", () => {
+    assert.equal(multiply(2, 2), 4);
+  });
+});

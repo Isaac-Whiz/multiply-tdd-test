@@ -1,5 +1,5 @@
 const multiply = (a, b) => {
-  return 2;
+  return a * b;
 };
 
 export { multiply };
