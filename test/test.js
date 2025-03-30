@@ -36,3 +36,9 @@ describe("Testing multiplication differently ", () => {
     assert.equal(multiplyDifferently(2, 2), 4);
   });
 });
+
+describe("Testing multiplication differently on second cycle ", () => {
+  it("Should multiply two values without the asterisk", () => {
+    assert.equal(multiplyDifferently(3, 3), 9);
+  });
+});
