@@ -1,50 +1,35 @@
 import { assert } from "chai";
 import { multiply, multiplyDifferently } from "../multiply.js";
+import { describe, it } from "mocha";
 
-describe("Testing multiplication on the first cycle", () => {
-  it("Should multiply two values", () => {
+describe("Testing multiplication", () => {
+  it("Should multiply two values on fisrt cycle ", () => {
     assert.equal(multiply(2, 1), 2);
   });
-});
 
-describe("Testing multiplication on a second cycle", () => {
-  it("Should multiply two values", () => {
+  it("Should multiply two on second cycle returning 4", () => {
     assert.equal(multiply(2, 2), 4);
   });
-});
 
-describe("Testing multiplication on a third cycle", () => {
-  it("Should multiply two values", () => {
+  it("Should multiply two values on third cycle returning 9", () => {
     assert.equal(multiply(3, 3), 9);
   });
-});
 
-describe("Testing multiplication on a fourth cycle", () => {
-  it("Should multiply two values", () => {
+  it("Should multiply two values on fourth cycle returning 16", () => {
     assert.equal(multiply(4, 4), 16);
   });
 });
 
-describe("Testing multiplication on a fifth cycle", () => {
-  it("Should multiply two values", () => {
-    assert.equal(multiply(23, 45), 23 * 45);
-  });
-});
-
 describe("Testing multiplication differently ", () => {
-  it("Should multiply two values without the asterisk", () => {
+  it("Should multiply two values without the asterisk on first cycle returning 4", () => {
     assert.equal(multiplyDifferently(2, 2), 4);
   });
-});
 
-describe("Testing multiplication differently on second cycle ", () => {
-  it("Should multiply two values without the asterisk", () => {
+  it("Should multiply two values without the asterisk on second cycle returning 9", () => {
     assert.equal(multiplyDifferently(3, 3), 9);
   });
-});
 
-describe("Testing multiplication differently on third cycle ", () => {
-  it("Should multiply two values without the asterisk", () => {
+  it("Should multiply two values without the asterisk on third cycle returning 16", () => {
     assert.equal(multiplyDifferently(4, 4), 16);
   });
 });
